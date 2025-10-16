@@ -12,7 +12,7 @@
   --background-color: #ffffff; /* Cor de fundo de todo o site, incluindo seções individuais */
   --default-color: #150035; /* Cor padrão usada na maior parte do conteúdo de texto em todo o site */
   --heading-color: #150035; /* Cor para títulos, subtítulos e cabeçalhos em todo o site */
-  --accent-color: #ffb000; /* Cor de destaque que representa sua marca no site. É usada em botões, links e outros elementos que precisam se destacar */
+  --accent-color: #f5aa2d; /* Cor de destaque que representa sua marca no site. É usada em botões, links e outros elementos que precisam se destacar */
   --surface-color: #ffffff; /* A cor de superfície é usada como fundo de elementos em caixas dentro das seções, como cards, caixas de ícones ou outros elementos que requerem separação visual do fundo geral */
   --contrast-color: #ffeecc; /* Cor de contraste para o texto, garantindo legibilidade em fundos com cores de destaque, títulos ou padrão */
 }
@@ -20,11 +20,11 @@
 /* Cores do Menu de Navegação - As variáveis de cor a seguir são usadas especificamente para o menu de navegação. Elas são separadas das cores globais para permitir mais opções de personalização */
 :root {
   --nav-color: #150035; /* Cor padrão dos links principais do menu de navegação */
-  --nav-hover-color: #ffb000; /* Aplicada aos links principais do menu de navegação quando estão em foco ou ativos */
+  --nav-hover-color: #f5aa2d; /* Aplicada aos links principais do menu de navegação quando estão em foco ou ativos */
   --nav-mobile-background-color: #ffffff; /* Usada como cor de fundo do menu de navegação em dispositivos móveis */
   --nav-dropdown-background-color: #ffffff; /* Usada como cor de fundo dos itens suspensos que aparecem ao passar o mouse sobre os itens principais do menu */
   --nav-dropdown-color: #150035; /* Usada nos links de navegação dos itens suspensos no menu */
-  --nav-dropdown-hover-color: #ffb000; /* Semelhante à --nav-hover-color, essa cor é aplicada aos links dos itens suspensos ao serem destacados com o mouse */
+  --nav-dropdown-hover-color: #f5aa2d; /* Semelhante à --nav-hover-color, essa cor é aplicada aos links dos itens suspensos ao serem destacados com o mouse */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
