@@ -1,3 +1,18 @@
+/* Modal Info */
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--surface-color);
+}
+
+.modal-body {
+  color: var(--default-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
 /* Fonts */
 :root {
   --default-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
@@ -64,7 +79,6 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  opacity: 5%;
 }
 
 a {
