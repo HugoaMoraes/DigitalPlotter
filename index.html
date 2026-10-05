@@ -54,10 +54,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Email JS
-    ================================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
-
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -124,7 +120,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Plotter.webp" class="img-fluid" alt="Impressão de alta qualidade">
+            <img src="assets/img/PlotterImpr.png" class="img-fluid" alt="Impressão de alta qualidade">
           </div>
         </div>
       </div>
@@ -482,7 +478,7 @@
 
           <div class="col-lg-8">
             <form class="php-email-form" id="contact-form" data-aos="fade-up" data-aos-delay="200"
-              onsubmit="sendMmail(event)">
+              onsubmit="sendWhatsAppMessage(event)">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -503,25 +499,13 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <!-- Remova as divs de feedback daqui, pois o JS usa notification-col -->
-                  <button type="submit">Enviar Mensagem</button>
+                  <button type="submit"><i class="bi bi-whatsapp me-2"></i>Enviar Mensagem via WhatsApp</button>
                 </div>
 
               </div>
             </form>
           </div><!-- End Contact Form -->
 
-        </div>
-
-        <div class="notification-col" style="display:none;">
-          <div class="alert-box alert-box--error hideit">
-            <button class="alert-box__close">×</button>
-            <p></p>
-          </div>
-          <div class="alert-box alert-box--success hideit">
-            <button class="alert-box__close">×</button>
-            <p></p>
-          </div>
         </div>
 
       </div>
@@ -585,8 +569,8 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Email JS -->
-  <script src="assets/js/email.js" defer></script>
+  <!-- Contact WhatsApp JS -->
+  <script src="assets/js/contact.js" defer></script>
 
 
   <!-- Google tag (gtag.js) -->

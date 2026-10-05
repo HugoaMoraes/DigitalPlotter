@@ -1499,6 +1499,16 @@ section,
   border-left: 5px solid #bba31b;
 }
 
+.alert-box--clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alert-box--clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
 .map-iframe {
   line-height: 0 !important;
 }
