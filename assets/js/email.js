@@ -1,15 +1,26 @@
 /**
  * Digital Plotter - Envio de Contato via WhatsApp
- * (Compatibilidade retroativa com cache)
+ * Arquivo mantido para compatibilidade retroativa e cache de navegadores.
  */
 
 (function () {
   'use strict';
 
+  // Se contact.js já tiver sido carregado, reutiliza a implementação existente
+  if (typeof window.sendWhatsAppMessage === 'function') {
+    return;
+  }
+
   const WHATSAPP_PHONE = '5561995052995';
 
+  /**
+   * Processa o envio da mensagem para o WhatsApp
+   * @param {Event} [event]
+   */
   function sendWhatsAppMessage(event) {
-    if (event) event.preventDefault();
+    if (event && typeof event.preventDefault === 'function') {
+      event.preventDefault();
+    }
 
     const form = document.querySelector('#contact-form');
     if (form && !form.checkValidity()) {
@@ -17,21 +28,21 @@
       return;
     }
 
-    const sendername = (document.querySelector('#sendername')?.value || '').trim();
-    const to = (document.querySelector('#to')?.value || '').trim();
+    const senderName = (document.querySelector('#sendername')?.value || '').trim();
+    const senderEmail = (document.querySelector('#to')?.value || '').trim();
     const subject = (document.querySelector('#subject')?.value || '').trim();
     const message = (document.querySelector('#message')?.value || '').trim();
 
-    if (!sendername || !to || !subject || !message) {
+    if (!senderName || !senderEmail || !subject || !message) {
       if (form) form.reportValidity();
       return;
     }
 
     const textFormatted =
-      `Olá, equipe Digital Plotter! Tudo bem? 👋\n\n` +
-      `Vim através do site e gostaria de solicitar um atendimento:\n\n` +
-      `👤 *Nome:* ${sendername}\n` +
-      `📧 *E-mail:* ${to}\n` +
+      'Olá, equipe Digital Plotter! Tudo bem? 👋\n\n' +
+      'Vim através do site e gostaria de solicitar um atendimento:\n\n' +
+      `👤 *Nome:* ${senderName}\n` +
+      `📧 *E-mail:* ${senderEmail}\n` +
       `📌 *Assunto:* ${subject}\n\n` +
       `💬 *Mensagem:*\n${message}`;
 
@@ -47,7 +58,7 @@
   window.sendWhatsAppMessage = sendWhatsAppMessage;
   window.sendMmail = sendWhatsAppMessage;
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('#contact-form');
     if (contactForm) {
       contactForm.addEventListener('submit', sendWhatsAppMessage);

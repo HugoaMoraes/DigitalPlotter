@@ -9,13 +9,14 @@
     content="Gráfica rápida em Brasília: impressão digital, design gráfico, cartões de visita, banners, panfletos e soluções personalizadas para empresas e profissionais.">
   <meta name="keywords"
     content="gráfica Brasília, impressão digital, design gráfico, cartões de visita, banners, panfletos, adesivos, gráfica rápida">
+  <meta name="author" content="Hugo Moraes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://digitalplottergrafica.com.br/">
 
   <!-- Favicons -->
-  <link href="favicon.ico" rel="icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
   <link href="favicon.ico" rel="apple-touch-icon">
 
   <!-- Open Graph / Facebook -->
@@ -26,19 +27,19 @@
   <meta property="og:url" content="https://digitalplottergrafica.com.br/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Digital Plotter">
+  <meta property="og:locale" content="pt_BR">
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Digital Plotter | Impressão Rápida, Design e Soluções Gráficas em Brasília">
   <meta name="twitter:description"
     content="Impressão digital, design gráfico e soluções personalizadas para sua empresa.">
   <meta name="twitter:image" content="https://digitalplottergrafica.com.br/assets/img/logo.svg">
 
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#ffb000">
 
-  <!-- ThemeColor -->
-  <meta name="theme-color" content="#ffb000" />
-
-  <!-- Fonts -->
+  <!-- Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -64,147 +65,152 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MWB57S4V');</script>
   <!-- End Google Tag Manager -->
-
-
 </head>
 
 <body class="index-page">
 
+  <!-- Cabeçalho Principal -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <!-- Logo e Nome juntos -->
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logotipo.svg" style="height: 50px;" alt="Digital Plotter logotipo" class="me-2">
-        <img src="assets/img/logo.svg" style="height: 40px;" alt="Logo" class="me-2">
-        <!-- <h1 class="sitename m-0"><span>Digital</span> Plotter</h1> -->
+      <!-- Logo da Marca -->
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="Digital Plotter - Página Inicial">
+        <img src="assets/img/logotipo.svg" alt="Digital Plotter Logotipo" class="header-logo-primary me-2">
+        <img src="assets/img/logo.svg" alt="Digital Plotter Símbolo" class="header-logo-symbol me-2">
       </a>
 
-      <!-- Menu de navegação -->
-      <nav id="navmenu" class="navmenu">
+      <!-- Menu de Navegação -->
+      <nav id="navmenu" class="navmenu" aria-label="Navegação Principal">
         <ul>
           <li><a href="#hero" class="active">Início</a></li>
           <li><a href="#about">Quem Somos</a></li>
           <li><a href="#services">Serviços</a></li>
           <li><a href="#features">Diferenciais</a></li>
-          <!-- <li><a href="#pricing">Preços</a></li> -->
           <li><a href="#contact">Contato</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button type="button" class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Alternar menu de navegação"
+          aria-expanded="false" aria-controls="navmenu"></button>
       </nav>
 
     </div>
   </header>
 
-
-
-  <main class="main">
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero section light-background" aria-labelledby="hero-title">
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5">
+        <div class="row gy-5 align-items-center">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2>Suas ideias ganhando vida com qualidade!</h2>
+            <h1 id="hero-title">Suas ideias ganhando vida com qualidade!</h1>
             <p>Da criação ao acabamento, oferecemos soluções completas em impressão digital, gráfica rápida e materiais
               personalizados para destacar sua marca com qualidade e agilidade.</p>
-            <div class="d-flex">
+            <div class="d-flex flex-wrap gap-2">
               <a href="#contact" class="btn-get-started">Fale Conosco</a>
-
-              <a href="https://wa.me/5561995052995?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!" class="btn-get-whatsapp" target="_blank">Contato direto no
-                WhatsApp</a>
-              <!-- <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i
-                  class="bi bi-play-circle"></i><span>Veja
-                  Nosso Processo</span></a> -->
+              <a href="https://wa.me/5561995052995?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                class="btn-get-whatsapp d-inline-flex align-items-center" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Contato direto no WhatsApp
+              </a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/PlotterImpr.png" class="img-fluid" alt="Impressão de alta qualidade">
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="assets/img/PlotterImpr.png" class="img-fluid" alt="Equipamento de impressão digital de alta performance"
+              width="600" height="400" fetchpriority="high">
           </div>
         </div>
       </div>
 
+      <!-- Caixas de Destaque / Lightbox -->
       <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
         <div class="container position-relative">
           <div class="row gy-4 mt-5">
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-card-text"></i></div>
-                <h4 class="title"><a href="/assets/img/cartao.jpg" class="glightbox stretched-link">Cartões de
-                    Visita</a></h4>
+                <div class="icon"><i class="bi bi-card-text" aria-hidden="true"></i></div>
+                <h4 class="title"><a href="assets/img/cartao.jpg" class="glightbox stretched-link"
+                    title="Exemplo de Cartões de Visita" aria-label="Ver imagem de Cartões de Visita">Cartões de Visita</a></h4>
               </div>
-            </div><!--End Icon Box -->
+            </div>
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-megaphone"></i></div>
-                <h4 class="title"><a href="/assets/img/banner.jpg" class="glightbox stretched-link">Banners e
-                    Panfletos</a></h4>
+                <div class="icon"><i class="bi bi-megaphone" aria-hidden="true"></i></div>
+                <h4 class="title"><a href="assets/img/banner.jpg" class="glightbox stretched-link"
+                    title="Exemplo de Banners e Panfletos" aria-label="Ver imagem de Banners e Panfletos">Banners e Panfletos</a></h4>
               </div>
-            </div><!--End Icon Box -->
+            </div>
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-sticky"></i></div>
-                <h4 class="title"><a href="/assets/img/adesivos.jpg" class="glightbox stretched-link">Adesivos
-                    Personalizados</a></h4>
+                <div class="icon"><i class="bi bi-sticky" aria-hidden="true"></i></div>
+                <h4 class="title"><a href="assets/img/adesivos.jpg" class="glightbox stretched-link"
+                    title="Exemplo de Adesivos Personalizados" aria-label="Ver imagem de Adesivos Personalizados">Adesivos Personalizados</a></h4>
               </div>
-            </div><!--End Icon Box -->
+            </div>
 
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
-                <div class="icon"><i class="bi bi-gift"></i></div>
-                <h4 class="title"><a href="/assets/img/presentes.jpg" class="glightbox stretched-link">Brindes
-                    Promocionais</a></h4>
+                <div class="icon"><i class="bi bi-gift" aria-hidden="true"></i></div>
+                <h4 class="title"><a href="assets/img/presentes.jpg" class="glightbox stretched-link"
+                    title="Exemplo de Brindes Promocionais" aria-label="Ver imagem de Brindes Promocionais">Brindes Promocionais</a></h4>
               </div>
-            </div><!--End Icon Box -->
+            </div>
 
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Quem Somos (About Section) -->
+    <section id="about" class="about section" aria-labelledby="about-title">
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p class="who-we-are">Quem Somos</p>
-            <h3>Especialistas em Impressão e Soluções Gráficas</h3>
+            <h2 id="about-title">Especialistas em Impressão e Soluções Gráficas</h2>
             <p class="fst-italic">
               A Digital Plotter é uma gráfica moderna e completa, focada em entregar qualidade, agilidade e atendimento
               personalizado para cada cliente. Atuamos em Brasília oferecendo desde impressões rápidas até grandes
               formatos, sempre com tecnologia de ponta e equipe especializada.
             </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Qualidade superior em todos os serviços de impressão.</span>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-2">
+                <i class="bi bi-check-circle me-2 text-warning" aria-hidden="true"></i>
+                <span>Qualidade superior em todos os serviços de impressão.</span>
               </li>
-              <li><i class="bi bi-check-circle"></i> <span>Atendimento rápido e soluções sob medida para sua
-                  necessidade.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Investimento constante em tecnologia e inovação
-                  gráfica.</span></li>
+              <li class="d-flex align-items-start mb-2">
+                <i class="bi bi-check-circle me-2 text-warning" aria-hidden="true"></i>
+                <span>Atendimento rápido e soluções sob medida para sua necessidade.</span>
+              </li>
+              <li class="d-flex align-items-start mb-2">
+                <i class="bi bi-check-circle me-2 text-warning" aria-hidden="true"></i>
+                <span>Investimento constante em tecnologia e inovação gráfica.</span>
+              </li>
             </ul>
-            <a href="#services" class="read-more"><span>Serviços</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#services" class="read-more" aria-label="Navegar até a seção de serviços">
+              <span>Serviços</span><i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+            </a>
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
               <div class="col-lg-6">
-                <img src="assets/img/banner.jpg" class="img-fluid" alt="Banner de Impressão">
+                <img src="assets/img/banner.jpg" class="img-fluid rounded" alt="Impressão de banner em grande escala" loading="lazy">
               </div>
               <div class="col-lg-6">
                 <div class="row gy-4">
                   <div class="col-lg-12">
-                    <img src="assets/img/cartao.jpg" class="img-fluid" alt="Cartão de Visita">
+                    <img src="assets/img/cartao.jpg" class="img-fluid rounded" alt="Cartões de visita personalizados" loading="lazy">
                   </div>
                   <div class="col-lg-12">
-                    <img src="assets/img/cartaz.jpg" class="img-fluid" alt="Cartaz de Promoção">
+                    <img src="assets/img/cartaz.jpg" class="img-fluid rounded" alt="Cartazes e pôsteres de alta definição" loading="lazy">
                   </div>
                 </div>
               </div>
@@ -214,16 +220,16 @@
         </div>
 
       </div>
-    </section><!-- /About Section -->
+    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Seção de Serviços -->
+    <section id="services" class="services section" aria-labelledby="services-title">
 
-      <!-- Section Title -->
+      <!-- Título da Seção -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Serviços</h2>
+        <h2 id="services-title">Serviços</h2>
         <div><span>Conheça Nossos</span> <span class="description-title">Serviços</span></div>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
         <div class="row gy-4">
@@ -231,123 +237,125 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-printer"></i>
+                <i class="bi bi-printer" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Impressão Digital e Offset">
                 <h3>Impressão Digital e Offset</h3>
               </a>
-              <p>Impressão rápida e de alta qualidade para pequenas e grandes tiragens, atendendo todas as demandas do
-                seu negócio.</p>
+              <p>Impressão rápida e de alta qualidade para pequenas e grandes tiragens, atendendo todas as demandas do seu negócio.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-card-text"></i>
+                <i class="bi bi-card-text" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Material Gráfico Personalizado">
                 <h3>Material Gráfico Personalizado</h3>
               </a>
               <p>Cartões de visita, banners, adesivos e outros materiais personalizados para destacar sua marca.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-gift"></i>
+                <i class="bi bi-gift" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Brindes Promocionais">
                 <h3>Brindes Promocionais</h3>
               </a>
               <p>Produção de brindes personalizados para ações promocionais e fidelização de clientes.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-palette"></i>
+                <i class="bi bi-palette" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Design Gráfico e Finalização de Arquivos">
                 <h3>Design Gráfico e Finalização de Arquivos</h3>
               </a>
               <p>Criação e finalização de artes profissionais para garantir o melhor resultado na impressão.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-journal"></i>
+                <i class="bi bi-journal" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Encadernação e Plastificação">
                 <h3>Encadernação e Plastificação</h3>
               </a>
               <p>Proteja e organize seus documentos com nossos serviços de encadernação e plastificação.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-signpost"></i>
+                <i class="bi bi-signpost" aria-hidden="true"></i>
               </div>
-              <a class="stretched-link">
+              <a href="#contact" class="stretched-link" aria-label="Solicitar orçamento para Impressões de Fachadas, Placas e Painéis">
                 <h3>Impressões de Fachadas, Placas e Painéis</h3>
               </a>
-              <p>Impressão de grandes formatos para fachadas, placas e painéis, com alta durabilidade e impacto visual.
-              </p>
+              <p>Impressão de grandes formatos para fachadas, placas e painéis, com alta durabilidade e impacto visual.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features section light-background">
+    <!-- Seção de Diferenciais (Features) -->
+    <section id="features" class="features section light-background" aria-labelledby="features-title">
 
-      <!-- Section Title -->
+      <!-- Título da Seção -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Diferenciais</h2>
+        <h2 id="features-title">Diferenciais</h2>
         <div><span>Por que Escolher</span> <span class="description-title">Nossa Gráfica</span></div>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
-        <div class="row gy-5 justify-content-between">
+        <div class="row gy-5 justify-content-between align-items-center">
           <div class="col-xl-5">
-            <div class="image-wrapper" id="img-display"></div>
+            <div class="image-wrapper" id="img-display" role="img" aria-label="Visualização dos diferenciais da Digital Plotter"></div>
           </div>
 
           <div class="col-xl-6 d-flex">
-            <div class="row align-self-center gy-4">
+            <div class="row align-self-center gy-4 w-100">
 
               <div class="col-md-6">
-                <div class="feature-box hover-trigger img-1 d-flex align-items-center">
-                  <i class="bi bi-check"></i>
+                <div class="feature-box hover-trigger img-1 d-flex align-items-center" tabindex="0"
+                  role="button" aria-label="Diferencial: Qualidade Impecável">
+                  <i class="bi bi-check" aria-hidden="true"></i>
                   <h3>Qualidade Impecável</h3>
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="feature-box hover-trigger img-2 d-flex align-items-center">
-                  <i class="bi bi-check"></i>
+                <div class="feature-box hover-trigger img-2 d-flex align-items-center" tabindex="0"
+                  role="button" aria-label="Diferencial: Atendimento Rápido">
+                  <i class="bi bi-check" aria-hidden="true"></i>
                   <h3>Atendimento Rápido</h3>
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="feature-box hover-trigger img-3 d-flex align-items-center">
-                  <i class="bi bi-check"></i>
+                <div class="feature-box hover-trigger img-3 d-flex align-items-center" tabindex="0"
+                  role="button" aria-label="Diferencial: Atendimento Personalizado">
+                  <i class="bi bi-check" aria-hidden="true"></i>
                   <h3>Atendimento Personalizado</h3>
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="feature-box hover-trigger img-4 d-flex align-items-center">
-                  <i class="bi bi-check"></i>
+                <div class="feature-box hover-trigger img-4 d-flex align-items-center" tabindex="0"
+                  role="button" aria-label="Diferencial: Tecnologia de Ponta">
+                  <i class="bi bi-check" aria-hidden="true"></i>
                   <h3>Tecnologia de Ponta</h3>
                 </div>
               </div>
@@ -357,261 +365,191 @@
         </div>
       </div>
 
+    </section>
 
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact section" aria-labelledby="contact-title">
 
-    </section><!-- /Features Section -->
-
-    <!-- <section id="pricing" class="pricing section">
-
-      
+      <!-- Título da Seção -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Preços</h2>
-        <div><span>Confira os Valores dos Nossos</span> <span class="description-title">Serviços</span></div>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4 d-flex align-items-stretch">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-tem d-flex flex-column justify-content-between w-100">
-              <h3 style="color: #FFEC00;">Plano Básico</h3>
-              <div class="price"><sup>R$</sup>00<span> / serviço</span></div>
-              <div class="icon">
-                <i class="bi bi-box" style="color: #FFEC00;"></i>
-              </div>
-              <ul>
-                <li>Impressão de até 100 unidades</li>
-                <li>Design simples</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Contratar</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-tem d-flex flex-column justify-content-between w-100">
-              <span class="featured">Promoção</span>
-              <h3 style="color: #FFCD00;">Plano Profissional</h3>
-              <div class="price"><sup>R$</sup>00<span> / serviço</span></div>
-              <div class="icon">
-                <i class="bi bi-send" style="color: #FFCD00;"></i>
-              </div>
-              <ul>
-                <li>Impressão de 1.000 unidades</li>
-                <li>Design personalizado</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Contratar</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-tem d-flex flex-column justify-content-between w-100">
-              <h3 style="color: #FF8D00 ;">Plano Empresarial</h3>
-              <div class="price"><sup>R$</sup>00<span> / serviço</span></div>
-              <div class="icon">
-                <i class="bi bi-airplane" style="color: #FF8D00 ;"></i>
-              </div>
-              <ul>
-                <li>Impressão para mais de 1.000 unidades</li>
-                <li>Consultoria de design</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Contratar</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contato</h2>
+        <h2 id="contact-title">Contato</h2>
         <div><span>Precisa de Ajuda?</span> <span class="description-title">Fale Conosco</span></div>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade" data-aos-delay="100">
 
         <div class="row gy-4">
 
+          <!-- Dados de Contato e Localização -->
           <div class="col-lg-4">
-            <!-- Endereço: abre o Google Maps -->
+            <!-- Endereço -->
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="https://maps.app.goo.gl/dFo129eZ61HbyVse9" target="_blank" title="Ver no Google Maps"
-                class="icon-link">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <a href="https://maps.app.goo.gl/dFo129eZ61HbyVse9" target="_blank" rel="noopener noreferrer"
+                title="Ver endereço no Google Maps" class="icon-link" aria-label="Ver endereço no Google Maps">
+                <i class="bi bi-geo-alt flex-shrink-0" aria-hidden="true"></i>
               </a>
               <div>
                 <h3>Endereço</h3>
-                <p>SRTVS Q 701<br>Condomínio Edifício Palácio do Rádio II<br>Asa Sul, Brasília - DF, 70297-400, Brasil
-                </p>
+                <p>SRTVS Q 701<br>Condomínio Edifício Palácio do Rádio II<br>Asa Sul, Brasília - DF, 70297-400, Brasil</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <!-- Telefone: inicia ligação -->
+            <!-- Telefone -->
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <a href="tel:+5561995052995" title="Ligar" class="icon-link">
-                <i class="bi bi-telephone flex-shrink-0"></i>
+              <a href="tel:+5561995052995" title="Ligar para a Digital Plotter" class="icon-link"
+                aria-label="Ligar para o número (61) 99505-2995">
+                <i class="bi bi-telephone flex-shrink-0" aria-hidden="true"></i>
               </a>
               <div>
                 <h3>Telefone</h3>
                 <p>(61) 99505-2995</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <!-- E-mail: abre o cliente de e-mail -->
+            <!-- E-mail -->
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <a href="mailto:digitalplottercopiadora@gmail.com" title="Enviar e-mail" class="icon-link">
-                <i class="bi bi-envelope flex-shrink-0"></i>
+              <a href="mailto:digitalplottercopiadora@gmail.com" title="Enviar e-mail para a Digital Plotter" class="icon-link"
+                aria-label="Enviar e-mail para digitalplottercopiadora@gmail.com">
+                <i class="bi bi-envelope flex-shrink-0" aria-hidden="true"></i>
               </a>
               <div>
                 <h3>E-mail</h3>
                 <p>digitalplottercopiadora@gmail.com</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
           </div>
 
+          <!-- Formulário de Contato -->
           <div class="col-lg-8">
             <form class="php-email-form" id="contact-form" data-aos="fade-up" data-aos-delay="200"
               onsubmit="sendWhatsAppMessage(event)">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" id="sendername" name="name" class="form-control" placeholder="Seu Nome" required>
+                  <label for="sendername" class="visually-hidden">Seu Nome</label>
+                  <input type="text" id="sendername" name="name" class="form-control" placeholder="Seu Nome"
+                    autocomplete="name" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" id="to" name="email" class="form-control" placeholder="Seu Email" required>
+                  <label for="to" class="visually-hidden">Seu E-mail</label>
+                  <input type="email" id="to" name="email" class="form-control" placeholder="Seu Email"
+                    autocomplete="email" required>
                 </div>
 
                 <div class="col-md-12">
+                  <label for="subject" class="visually-hidden">Assunto</label>
                   <input type="text" id="subject" name="subject" class="form-control" placeholder="Assunto" required>
                 </div>
 
                 <div class="col-md-12">
+                  <label for="message" class="visually-hidden">Mensagem</label>
                   <textarea id="message" name="message" class="form-control" rows="6" placeholder="Mensagem"
                     required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <button type="submit"><i class="bi bi-whatsapp me-2"></i>Enviar Mensagem via WhatsApp</button>
+                  <button type="submit" class="btn"><i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Enviar Mensagem via WhatsApp</button>
                 </div>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
 
-    <!-- Google Maps -->
-    <section class="mapa" data-aos="fade-up">
+    <!-- Mapa Interativo do Google Maps -->
+    <section class="mapa" data-aos="fade-up" aria-label="Mapa com localização física da empresa">
       <div class="map-iframe">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491405.8781447631!2d-47.893098!3d-15.798236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae891c446db%3A0x9338dbc9ce8a746f!2sGr%C3%A1fica%20Digital%20Plotter!5e0!3m2!1spt-BR!2sus!4v1751029461836!5m2!1spt-BR!2sus"
-          width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização da Gráfica Digital Plotter em Brasília - DF"></iframe>
       </div>
-    </section><!-- End Google Maps -->
+    </section>
 
   </main>
 
+  <!-- Rodapé -->
   <footer id="footer" class="footer light-background">
 
     <div class="container">
       <div class="copyright text-center">
         <p>© <strong>Digital Plotter</strong> - Soluções de Impressão e Design. Todos os direitos reservados.</p>
       </div>
+
       <div class="social-links d-flex justify-content-center">
-        <a href="https://wa.me/5561995052995?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" class="whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.instagram.com/graficadigitalplotter/" target="_blank"><i class="bi bi-instagram"></i></a>
-        <!-- <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a> -->
+        <a href="https://wa.me/5561995052995?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
+          class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/graficadigitalplotter/" target="_blank" rel="noopener noreferrer"
+          class="instagram" aria-label="Siga-nos no Instagram">
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
       </div>
+
       <div class="credits">
         <p class="creditos">
           Desenvolvido por
-          <a href="https://hugomoraes.site/" target="_blank"></a>
+          <a href="https://hugomoraes.site/" target="_blank" rel="noopener noreferrer"
+            aria-label="Hugo Moraes - Desenvolvedor Web">
+            <span class="visually-hidden">Hugo Moraes</span>
+          </a>
         </p>
-
       </div>
     </div>
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
+  <!-- Botão Voltar ao Topo -->
+  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+    aria-label="Voltar ao início da página">
+    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
   </a>
 
-  <!-- WhatsApp -->
-  <!-- <a href="https://wa.me/5561995052995?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
-    target="_blank" id="whatsapp-button" class="d-flex align-items-center justify-content-center">
-    <i class="bi bi-whatsapp"></i>
-  </a> -->
+  <!-- Elemento de Pré-carregamento -->
+  <div id="preloader" aria-hidden="true"></div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Scripts das Bibliotecas (Vendors) -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Scripts Principais do Projeto -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Contact WhatsApp JS -->
   <script src="assets/js/contact.js" defer></script>
 
-
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager / Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6BN2820JD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-P6BN2820JD');
   </script>
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWB57S4V" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+      style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
 
-  <!-- Modal de Aviso -->
-  <!-- <div class="modal fade" id="avisoModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-    aria-labelledby="avisoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-danger text-white">
-          <h5 class="modal-title" id="avisoModalLabel">Aviso Importante</h5>
-        </div>
-        <div class="modal-body text-center">
-          <p class="mb-0"><b>Ops! Parece que há um pagamento em aberto.</b><br>Favor contatar o <b><a
-                href="https://hugomoraes.site/" target="_blank">administrador</a>.</b></p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
+  <!-- Inicialização segura de modais opcionais -->
   <script>
-    // Mostrar o modal de aviso ao carregar a página
     document.addEventListener('DOMContentLoaded', function () {
-      var avisoModal = new bootstrap.Modal(document.getElementById('avisoModal'), {
-        backdrop: 'static',
-        keyboard: false
-      });
-      avisoModal.show();
+      var modalElement = document.getElementById('avisoModal');
+      if (modalElement && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+        var avisoModal = new bootstrap.Modal(modalElement, {
+          backdrop: 'static',
+          keyboard: false
+        });
+        avisoModal.show();
+      }
     });
   </script>
 
